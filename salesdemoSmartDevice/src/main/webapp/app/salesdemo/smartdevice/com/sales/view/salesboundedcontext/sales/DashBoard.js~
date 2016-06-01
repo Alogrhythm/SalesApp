@@ -1,0 +1,32 @@
+Ext.define('Salesdemo.salesdemo.smartdevice.com.sales.view.salesboundedcontext.sales.DashBoard', {
+     "xtype": "dashBoard",
+     "name": "DashForm",
+     "items": [{
+          "xtype": "panel",
+          "items": [],
+          "border": true,
+          "autoScroll": false,
+          "layout": "fit",
+          "margin": 5,
+          "itemId": "panel_ext_13424"
+     }, {
+          "xtype": "reportView",
+          "name": "Top10DataReport",
+          "title": "Current Top 10 Sales Data",
+          "isCustomReport": true,
+          "reportWidgets": ["1", "3"],
+          "refId": "8D744881-F171-49F4-B588-AACA080C90DC",
+          "margin": 5,
+          "itemId": "reportView_ext_13441"
+     }],
+     "border": true,
+     "autoScroll": true,
+     "title": "DashBoard",
+     "margin": 5,
+     "itemId": "form_ext_13416",
+     "dockedItems": [],
+     "requires": ["Salesdemo.view.smartdevice.reportview.ReportMainView", "Salesdemo.salesdemo.smartdevice.com.sales.controller.salesboundedcontext.sales.DashBoardController", "Salesdemo.salesdemo.shared.com.sales.viewmodel.salesboundedcontext.sales.DashBoardViewModel", "Salesdemo.salesdemo.shared.com.sales.model.salesboundedcontext.sales.DashBoardModel"],
+     "extend": "Ext.form.Panel",
+     "viewModel": "DashBoardViewModel",
+     "controller": "DashBoardController"
+});

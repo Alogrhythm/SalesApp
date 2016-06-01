@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON salesdb.* TO 'salesdb'@'%' IDENTIFIED BY 'salesdb' WITH GRANT OPTION
